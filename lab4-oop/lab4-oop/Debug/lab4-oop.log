@@ -1,9 +1,12 @@
 ﻿  Sort.cpp
-C:\Users\Claudia\source\repos\lab4-oop\lab4-oop\Sort.cpp(18,19): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Claudia\source\repos\lab4-oop\lab4-oop\Sort.cpp(33,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\source\repos\lab4-oop\lab4-oop\Sort.cpp(20,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Claudia\source\repos\lab4-oop\lab4-oop\Sort.cpp(35,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Claudia\source\repos\lab4-oop\lab4-oop\Sort.cpp(50,19): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Claudia\source\repos\lab4-oop\lab4-oop\Sort.cpp(60,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Claudia\source\repos\lab4-oop\lab4-oop\Sort.cpp(53,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\source\repos\lab4-oop\lab4-oop\Sort.cpp(55,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\source\repos\lab4-oop\lab4-oop\Sort.cpp(69,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\source\repos\lab4-oop\lab4-oop\Sort.cpp(71,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\source\repos\lab4-oop\lab4-oop\Sort.cpp(129,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\source\repos\lab4-oop\lab4-oop\Sort.cpp(139,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   main.cpp
   Generating Code...
   lab4-oop.vcxproj -> C:\Users\Claudia\source\repos\lab4-oop\Debug\lab4-oop.exe

@@ -14,69 +14,116 @@ int  Sort::GetElementsCount()
 }
 void Sort::InsertSort(bool ascendent)
 {
-	int j,key;
-	for (int i = 1;i < this->vect.size();i++)
+	if (ascendent == false)
 	{
-		key = this->vect.at(i);
-		j = i - 1;
-		while(j>=0 && this->vect.at(j)<key)
+		int j, key;
+		for (int i = 1;i < this->vect.size();i++)
 		{
-			this->vect.at(j + 1) = this->vect.at(j);
-			j--;
+			key = this->vect.at(i);
+			j = i - 1;
+			while (j >= 0 && this->vect.at(j) < key)
+			{
+				this->vect.at(j + 1) = this->vect.at(j);
+				j--;
+			}
+			this->vect.at(j + 1) = key;
 		}
-		this->vect.at(j+1) = key;
+	}
+	else
+	{
+		int j, key;
+		for (int i = 1;i < this->vect.size();i++)
+		{
+			key = this->vect.at(i);
+			j = i - 1;
+			while (j >= 0 && this->vect.at(j) > key)
+			{
+				this->vect.at(j + 1) = this->vect.at(j);
+				j--;
+			}
+			this->vect.at(j + 1) = key;
+		}
 	}
 }
 void Sort::BubbleSort(bool ascendent)
 {
-	int aux;
-	for (int i = 0;i < this->vect.size()-1;i++)
+	if (ascendent == false)
 	{
-		for (int j = 0;j < this->vect.size()-i-1;j++)
+		int aux;
+		for (int i = 0;i < this->vect.size() - 1;i++)
 		{
-			if (this->vect.at(j) < this->vect.at(j+1))
+			for (int j = 0;j < this->vect.size() - i - 1;j++)
 			{
-				aux = this->vect.at(j);
-				this->vect.at(j) = this->vect.at(j+1);
-				this->vect.at(j+1) = aux;
+				if (this->vect.at(j) < this->vect.at(j + 1))
+				{
+					aux = this->vect.at(j);
+					this->vect.at(j) = this->vect.at(j + 1);
+					this->vect.at(j + 1) = aux;
+				}
+			}
+		}
+	}
+	else
+	{
+		int aux;
+		for (int i = 0;i < this->vect.size() - 1;i++)
+		{
+			for (int j = 0;j < this->vect.size() - i - 1;j++)
+			{
+				if (this->vect.at(j) > this->vect.at(j + 1))
+				{
+					aux = this->vect.at(j);
+					this->vect.at(j) = this->vect.at(j + 1);
+					this->vect.at(j + 1) = aux;
+				}
 			}
 		}
 	}
 }
-int k;
-void poz(int li, int ls, int& k, vector<int> a)
-{
-	int i = li, j = ls, c, i1 = 0, j1 = -1;
-	while (i < j)
+int Sort::partition( int li, int ls, int pivot,bool ascendent) {
+	if (ascendent == true)
 	{
-		if (a[i] > a[j])
+		int PIndex = li;
+		int aux;
+		for (int i = li;i <= ls;i++)
 		{
-			c = a[j];
-			a[j] = a[i];
-			a[i] = c;
-			c = i1;
-			i1 = -j1;
-			j1 = -c;
+			if (this->vect.at(i) <= pivot) {
+				aux = this->vect.at(PIndex);
+				this->vect.at(PIndex) = this->vect.at(i);
+				this->vect.at(i) = aux;
+				PIndex++;
+			}
 		}
-		i = i + i1;
-		j = j + j1;
+		PIndex--;
+		return PIndex;
 	}
-	k = i;
+	else
+	{
+		int PIndex = li;
+		int aux;
+		for (int i = li;i <= ls;i++)
+		{
+			if (this->vect.at(i) >= pivot) {
+				aux = this->vect.at(PIndex);
+				this->vect.at(PIndex) = this->vect.at(i);
+				this->vect.at(i) = aux;
+				PIndex++;
+			}
+		}
+		PIndex--;
+		return PIndex;
+	}
 }
-void quick(int li, int ls)
+void Sort::QuickSort(int li, int ls,bool ascendent)
 {
 	if (li < ls)
 	{
-		poz(li, ls, k, this->vect);
-		quick(li, k - 1);
-		quick(k + 1, ls);
+		int pivot = this->vect.at(ls);
+		int PIndex = partition( li, ls, pivot,ascendent=false);
+		QuickSort(li, PIndex - 1,ascendent=false);
+		QuickSort(PIndex + 1, ls, ascendent = false);
 	}
 }
-void Sort::QuickSort(bool ascendent)
-{
-	quick(1, this->vect.size());
-}
-
 void Sort::Print()
 {
 	for (int i = 0;i < this->vect.size();i++)
@@ -112,7 +159,6 @@ Sort::Sort(int count, ...)
 	{
 		this->vect.push_back(va_arg(ap, int));
 	}
-
 }
 Sort::Sort(char s[100])
 {
