@@ -1,0 +1,10 @@
+﻿  Number.cpp
+C:\Users\Claudia\source\repos\lab5- oop\lab5- oop\Number.h(104,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\source\repos\lab5- oop\lab5- oop\Number.h(115,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\source\repos\lab5- oop\lab5- oop\Number.cpp(44,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\source\repos\lab5- oop\lab5- oop\Number.cpp(62,64): warning C4244: '+=': conversion from 'double' to 'long', possible loss of data
+  main.cpp
+C:\Users\Claudia\source\repos\lab5- oop\lab5- oop\Number.h(104,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\source\repos\lab5- oop\lab5- oop\Number.h(115,20): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  lab5- oop.vcxproj -> C:\Users\Claudia\source\repos\lab5- oop\Debug\lab5- oop.exe
