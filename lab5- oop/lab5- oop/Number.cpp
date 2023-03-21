@@ -54,7 +54,7 @@ void Number::SwitchBase(int newBase)
 	long numberInit;
 	char* res= (char*)malloc(100);
 	long nr=0;
-	if (this->base <= 10)
+	if (this->base <= 10&& this->base>=2)
 	{
 		numberInit = atoi(this->value);
 		while (numberInit > 0)
@@ -64,7 +64,7 @@ void Number::SwitchBase(int newBase)
 			contor++;
 		}
 	}
-	else
+	if(this->base>10&&this->base<=16)
 	{
 		numberInit = strtol(this->value, NULL, this->base);
 		numberDecimal = numberInit;
