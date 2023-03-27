@@ -1,0 +1,5 @@
+﻿  Circuit.cpp
+C:\Users\Claudia\source\repos\lab6- oop\lab6- oop\Circuit.cpp(77,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\source\repos\lab6- oop\lab6- oop\Circuit.cpp(79,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\source\repos\lab6- oop\lab6- oop\Circuit.cpp(95,19): warning C4018: '<': signed/unsigned mismatch
+  lab6- oop.vcxproj -> C:\Users\Claudia\source\repos\lab6- oop\Debug\lab6- oop.exe
