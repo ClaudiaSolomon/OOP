@@ -48,7 +48,7 @@ int main()
 {
 	string s;
     vector<string> vect;
-    map<string, int> map;
+   map<string, int> map;
     vect.resize(1);
 	ifstream file("input.txt");
     char c;
