@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\Claudia\Documents\GitHub\OOP\Lab8\Lab8\main.cpp(23,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\Documents\GitHub\OOP\Lab8\Lab8\main.cpp(38,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Claudia\Documents\GitHub\OOP\Lab8\Lab8\main.cpp(43,22): warning C4018: '<': signed/unsigned mismatch
+  Lab8.vcxproj -> C:\Users\Claudia\Documents\GitHub\OOP\Lab8\Debug\Lab8.exe
