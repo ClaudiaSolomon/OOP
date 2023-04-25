@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\Claudia\source\repos\lab7- oop\lab7- oop\main.cpp(6,11): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Claudia\source\repos\lab7- oop\lab7- oop\main.cpp(11,19): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  lab7- oop.vcxproj -> C:\Users\Claudia\source\repos\lab7- oop\Debug\lab7- oop.exe
